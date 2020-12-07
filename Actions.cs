@@ -38,7 +38,7 @@
         public void LoggerError()
         {
             this.logger.LogMessage("Error", "Action failed by reason");
-            FileService.WriteLine("Error","Action failed by reason");
+            FileService.WriteLine("Error", "Action failed by reason");
 
             try
             {

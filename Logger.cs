@@ -8,11 +8,13 @@
     internal sealed class Logger
     {
         /// <summary>
-        /// 
+        /// An attempt at making a singleton.
         /// </summary>
         private static readonly Logger instance = new Logger();
 
-        private Logger() { }
+        private Logger()
+        {
+        }
 
         /// <summary>
         /// Gets name of product.
