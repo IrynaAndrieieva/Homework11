@@ -5,8 +5,11 @@
     /// <summary>
     /// Start point of app.
     /// </summary>
+    // Please do not check the work, I am still doing it
     public class Program
     {
+        // Please do not check the work, I am still doing it
+
         /// <summary>
         /// Start of app.
         /// </summary>
