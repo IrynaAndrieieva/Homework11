@@ -10,7 +10,7 @@
         /// <summary>
         /// Connected Logger to this class.
         /// </summary>
-        Logger logger = Logger.Instance;
+        private readonly Logger logger = Logger.Instance;
 
         /// <summary>
         /// Make message from Info.
@@ -18,6 +18,7 @@
         public void LoggerInfo()
         {
             this.logger.LogMessage("Info", "Start method");
+            FileService.WriteLine("Info", "Start method");
         }
 
         /// <summary>
@@ -25,9 +26,10 @@
         /// </summary>
         public void LoggeWarning()
         {
-            this.logger.LogMessage("Warning", "Action got this custom Exception"); 
+            this.logger.LogMessage("Warning", "Action got this custom Exception");
+            FileService.WriteLine("Warning", "Action got this custom Exception");
 
-            //throw new BusinessException("Skipped logic in method: BusinessException");
+            // throw new BusinessException("Skipped logic in method: BusinessException");
         }
 
         /// <summary>
@@ -36,6 +38,7 @@
         public void LoggerError()
         {
             this.logger.LogMessage("Error", "Action failed by reason");
+            FileService.WriteLine("Error","Action failed by reason");
 
             try
             {
