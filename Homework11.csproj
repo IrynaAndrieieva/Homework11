@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Actions.cs" />
     <Compile Include="BusinessException.cs" />
+    <Compile Include="FileService.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
