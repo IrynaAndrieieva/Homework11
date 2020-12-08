@@ -1,15 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Homework11
+﻿namespace Homework11
 {
-    class Program
+    using System;
+
+    /// <summary>
+    /// Start point of app.
+    /// </summary>
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Start of app.
+        /// </summary>
+        /// <param name="args">input args.</param>
+        public static void Main(string[] args)
         {
+            var starter = new Starter();
+            starter.Run();
         }
     }
 }
